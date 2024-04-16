@@ -1,6 +1,13 @@
 @import "html/header";
 @import "html/footer";
 
+   *{
+      background-color: white;
+      font-family: Playfair Display;
+      margin: 0;
+      padding: 0;
+  }
+
 main{
      .shud{
       text-align: center;
