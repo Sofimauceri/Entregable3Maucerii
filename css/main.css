@@ -1,0 +1,114 @@
+header nav {
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+header nav ul a:hover {
+  text-decoration: underline;
+}
+
+footer .redes {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .redes .preguntas a {
+  color: black;
+  text-decoration: none;
+}
+
+main .shud {
+  text-align: center;
+  padding-top: 3%;
+}
+main .amuletos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10%;
+  padding: 5%;
+}
+main .amuletos img {
+  width: 40%;
+}
+main .mix-fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2.1fr);
+  row-gap: 5%;
+  column-gap: 5%;
+}
+main .mix-fotos img {
+  width: 100%;
+}
+main .ultimo-texto {
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+}
+
+.general-pulseras {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 2%;
+  column-gap: 2%;
+}
+.general-pulseras img {
+  width: 95%;
+  height: 70%;
+}
+
+.general-lazos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 5%;
+  column-gap: 5%;
+  margin-top: 5%;
+}
+.general-lazos img {
+  max-width: 100%;
+}
+
+.general-tobilleras {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5%;
+  column-gap: 5%;
+  margin-top: 5%;
+}
+.general-tobilleras img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  * {
+    font-size: 8px;
+  }
+  header h1 {
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

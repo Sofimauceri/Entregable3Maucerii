@@ -1,0 +1,91 @@
+@import "html/header";
+@import "html/footer";
+
+main{
+     .shud{
+      text-align: center;
+      padding-top: 3%;
+          }
+     .amuletos{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      column-gap: 10%;
+      padding: 5%;
+     img{
+      width: 40%;
+        }
+        }
+     .mix-fotos{
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(2.1fr);
+       row-gap: 5%;
+       column-gap: 5%;
+     img{
+       width:100%
+        }
+                }
+    .ultimo-texto{
+       margin: 2%;
+       padding: 2%;
+       text-align: center;
+                }          
+    }
+
+    .general-pulseras{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        row-gap: 2%;
+        column-gap: 2%;
+     
+     img{
+        width: 95%;
+        height: 70%;
+    }
+   }
+  
+     
+     
+    .general-lazos{
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(5,1fr);
+       row-gap: 5%;
+       column-gap: 5%;
+       margin-top: 5%;
+       img{
+        max-width: 100%;
+       }
+    }
+   .general-tobilleras{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5%;
+  column-gap: 5%;
+  margin-top: 5%;
+  img{
+  max-width: 100%;
+  }
+}
+
+    @media only screen and (max-width:480px){
+      *{
+         font-size: 8px;
+      }
+     
+      header{
+         h1{
+         display: flex;
+         justify-content: center;
+          }
+         nav {
+            ul{
+               li{
+             display: inline-block;
+             margin-right: 20px;
+         }
+      }
+    }
+   } 
+  }
