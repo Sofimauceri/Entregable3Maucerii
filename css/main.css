@@ -27,10 +27,17 @@ footer .redes {
   color: black;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
-footer .redes .preguntas a {
+footer .redes a {
   color: black;
   text-decoration: none;
+}
+footer .redes .preguntas {
+  list-style: none;
+}
+footer .bg-ultimonav a {
+  color: black;
 }
 
 * {
@@ -84,7 +91,7 @@ main .ultimo-texto {
 .general-lazos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   row-gap: 5%;
   column-gap: 5%;
   margin-top: 5%;

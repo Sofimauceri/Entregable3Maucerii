@@ -3,11 +3,19 @@ footer{
      color: black;
      display: grid;
      grid-template-columns: repeat(3,1fr);
-     .preguntas{
+     justify-items: center;
+      
         a{
             color: black;
             text-decoration: none;
         }
-     }
+        .preguntas{
+            list-style: none;
+        }
     }
+    .bg-ultimonav {
+        a{
+        color:black;
+    }
+}
 }
