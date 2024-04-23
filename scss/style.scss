@@ -1,5 +1,6 @@
 @import "html/header";
 @import "html/footer";
+@import "./utilidades/mixin";
 
    *{
       background-color: white;
@@ -43,12 +44,12 @@ main{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
-        row-gap: 2%;
-        column-gap: 2%;
+        @include gap;
+        margin-top: 5%;
      
      img{
-        width: 95%;
-        height: 70%;
+       
+      max-width: 100%;
     }
    }
   
@@ -58,18 +59,17 @@ main{
        display: grid;
        grid-template-columns: repeat(4,1fr);
        grid-template-rows: repeat(6,1fr);
-       row-gap: 5%;
-       column-gap: 5%;
+       @include gap;
        margin-top: 5%;
        img{
         max-width: 100%;
        }
     }
+
    .general-tobilleras{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 5%;
-  column-gap: 5%;
+  @include gap;
   margin-top: 5%;
   img{
   max-width: 100%;
