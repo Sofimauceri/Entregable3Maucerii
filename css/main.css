@@ -43,8 +43,8 @@ footer .bg-ultimonav a {
 * {
   background-color: white;
   font-family: Playfair Display;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 main .shud {
@@ -79,10 +79,11 @@ main .ultimo-texto {
 .general-pulseras {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 5%;
   column-gap: 5%;
   margin-top: 5%;
+  margin-bottom: 15%;
 }
 .general-pulseras img {
   max-width: 100%;
@@ -95,6 +96,7 @@ main .ultimo-texto {
   row-gap: 5%;
   column-gap: 5%;
   margin-top: 5%;
+  margin-bottom: 10%;
 }
 .general-lazos img {
   max-width: 100%;
@@ -106,6 +108,7 @@ main .ultimo-texto {
   row-gap: 5%;
   column-gap: 5%;
   margin-top: 5%;
+  margin-bottom: 10%;
 }
 .general-tobilleras img {
   max-width: 100%;
