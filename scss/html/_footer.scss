@@ -1,13 +1,14 @@
 footer{
     .redes{
+     border: 1px solid black;
      color: black;
      display: grid;
      grid-template-columns: repeat(3,1fr);
      justify-items: center;
+     align-items: center;
       
         a{
             color: black;
-            text-decoration: none;
         }
         .preguntas{
             list-style: none;

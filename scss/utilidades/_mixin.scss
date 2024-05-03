@@ -1,6 +1,22 @@
-@mixin gap {
-
+@mixin general {
+    margin: 10px;
     row-gap: 5%;
     column-gap: 5%;
+    text-align: center;
+
 }
 
+@mixin margin ($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin button {
+    transform:scale(1.2);
+    background-color: black;
+    color: white;
+
+}
+@mixin size{
+    font-size: 30px;
+}

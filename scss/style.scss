@@ -1,6 +1,7 @@
 @import "html/header";
 @import "html/footer";
 @import "./utilidades/mixin";
+@import "./mediasqueries/mediasq.scss";
 
 
 *{
@@ -33,7 +34,7 @@ main{
      img{
        width:100%
         }
-                }
+    }
     .ultimo-texto{
        margin: 2%;
        padding: 2%;
@@ -45,13 +46,21 @@ main{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(3,1fr);
-        @include gap;
-        margin-top: 5%;
-        margin-bottom: 15%;
+        @include general;
+        @include margin (5%, 15%);
+        
      
-     img{
+   img{
       max-width: 100%;
     }
+   
+    h2{ 
+      @include size;
+     }
+                                          
+     button:hover {
+      @include button;
+     }
    }
   
      
@@ -60,42 +69,60 @@ main{
        display: grid;
        grid-template-columns: repeat(4,1fr);
        grid-template-rows: repeat(6,1fr);
-       @include gap;
-       margin-top: 5%;
-       margin-bottom: 10%;
+       @include general;
+       @include margin (5%, 10%);
+     
        img{
-        max-width: 100%;
-       }
-    }
+         max-width: 100%;
+         object-fit: cover
+        }
+       
+    h2{ 
+      @include size;
+     }
+     
+       button:hover {
+         @include button;
+        }
+      }
 
    .general-tobilleras{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  @include gap;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  @include general;
+  @include margin (5%, 10%);
+
   img{
   max-width: 100%;
+  object-fit: cover
+  }
+  
+  h2{ 
+   @include size;
+  }
+
+  button:hover {
+   @include button;
   }
 }
 
-    @media only screen and (max-width:480px){
-      *{
-         font-size: 8px;
+.preguntasf{
+   display: grid;
+   grid-template-columns: repeat(3,1fr); 
+   @include margin (5%, 2%);
+   
+   .preguntas-frecuentes{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-align: center;
+      h1{
+      text-decoration: underline;
       }
-     
-      header{
-         h1{
-         display: flex;
-         justify-content: center;
-          }
-         nav {
-            ul{
-               li{
-             display: inline-block;
-             margin-right: 20px;
-         }
-      }
-    }
-   } 
-  }
+   }
+   img{
+      max-width: 100%;
+      max-height: 80%;
+   }
+
+}
+  
